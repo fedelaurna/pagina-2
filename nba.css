@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  #equipo-info {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  #equipo-info img {
+    width: 120px;
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  #equipo-info p.description {
+    text-align: justify;
+    font-style: italic;
+    color: #555;
+  }
+  
+  #equipo-info .redes a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #0366d6;
+    font-weight: bold;
+  }
+  
+
+  #contenedor {
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 50px auto;
+  }
+  
