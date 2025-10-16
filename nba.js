@@ -1,6 +1,5 @@
 let equiposNBA = [];
 
-// Cargar equipos desde la API
 fetch("https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=NBA")
   .then(res => res.json())
   .then(data => {
@@ -15,7 +14,7 @@ fetch("https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=NBA")
     });
   });
 
-// Mostrar info del equipo seleccionado
+
 document.getElementById("select-equipo").addEventListener("change", function() {
   const idSeleccionado = this.value;
   const equipo = equiposNBA.find(t => t.idTeam === idSeleccionado);
@@ -33,7 +32,6 @@ document.getElementById("select-equipo").addEventListener("change", function() {
       <p class="description"><em>Descripción:</em><br>${equipo.strDescriptionEN || 'Sin descripción disponible.'}</p>
 
     `;
-  } else {
-    infoDiv.innerHTML = "";
+  
   }
 });
